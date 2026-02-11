@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Special Websites</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    overflow-x: hidden;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: rgba(255, 0, 100, 0.6);
+    animation: floatUp linear infinite;
+    font-size: 20px;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* Hero */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.section.alt {
+    background: #fff0f3;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.price {
+    font-size: 28px;
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+/* Testimonials */
+.testimonial {
+    max-width: 600px;
+    margin: auto;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* CTA */
+.cta {
+    background: #ff4d6d;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta a {
+    background: white;
+    color: #ff4d6d;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Music -->
+<audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating hearts -->
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 8000);
+}
+setInterval(createHeart, 300);
+</script>
+
+<header>
+    <h1>Valentine Special Websites</h1>
+    <div class="subtitle">Make your loved one feel truly special ❤️</div>
+    <p>Custom romantic websites designed just for your partner</p>
+</header>
+
+<section class="section">
+    <h2>What You Get</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Romantic Design</h3>
+            <p>Elegant love-themed layouts with animations.</p>
+        </div>
+        <div class="card">
+            <h3>Photo Memories</h3>
+            <p>Your pictures displayed in a beautiful gallery.</p>
+        </div>
+        <div class="card">
+            <h3>Music & Effects</h3>
+            <p>Background music, floating hearts, and more.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section alt">
+    <h2>Pricing</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Basic Love Page</h3>
+            <p class="price">₹199</p>
+            <p>Single page romantic website</p>
+            <p>Photo gallery</p>
+            <p>Love message</p>
+        </div>
+
+        <div class="card">
+            <h3>Animated Love Story</h3>
+            <p class="price">₹1499</p>
+            <p>Animated effects</p>
+            <p>Music & slideshow</p>
+            <p>Custom message</p>
+        </div>
+
+        <div class="card">
+            <h3>Premium Proposal Site</h3>
+            <p class="price">₹1999</p>
+            <p>Fully custom design</p>
+            <p>Proposal animation</p>
+            <p>Interactive elements</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Happy Clients</h2>
+    <div class="testimonial">
+        “She cried happy tears when she saw the website.  
+        Best surprise ever!” — Rahul
+    </div>
+    <div class="testimonial">
+        “Beautiful design and fast delivery. Highly recommended.” — Aman
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Order Your Valentine Website Now</h2>
+    <p>Limited Valentine slots available.</p>
+    <a href="https://wa.me/+919895370502">Order on WhatsApp</a>
+</section>
+
+<footer>
+    Made with ❤️ | Valentine Website Studio
+</footer>
+
+</body>
+</html>
